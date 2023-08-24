@@ -3,7 +3,7 @@ import { Box, Flex, Heading } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { Chart } from 'chart.js';
+import { Chart } from 'chart.js/auto';
 import "leaflet/dist/leaflet.css"
 const fetchChartData = async () => {
   return await axios.get('https://disease.sh/v3/covid-19/historical/all?lastdays=all');
@@ -82,7 +82,7 @@ useEffect(() => {
              <br />
              <br />
              <Box>
-                <MapContainer center={[0, 0]} zoom={2}  >
+                <MapContainer  >
                    <TileLayer url="https://api.maptiler.com/maps/basic-v2/256/{z}/{x}/{y}.png?key=NLe8DG6CVIhkI4PpAXR1" />
                    {countryData.map((country) => (
                        <Marker key={country.name} position={[country.lat, country.long]}>
