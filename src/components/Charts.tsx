@@ -3,7 +3,7 @@ import { Box, Flex, Heading } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { Chart } from 'chart.js/dist';
+import { Chart } from 'chart.js';
 import "leaflet/dist/leaflet.css"
 const fetchChartData = async () => {
   return await axios.get('https://disease.sh/v3/covid-19/historical/all?lastdays=all');
