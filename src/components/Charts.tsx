@@ -49,7 +49,7 @@ useEffect(()=>{
 
 
 useEffect(() => {
-  const chartConfig = {
+  const chartConfig:any = {
     type: 'line',
     data: chartData,
   };
