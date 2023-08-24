@@ -3,7 +3,6 @@ import { Box, Flex, Heading } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import Chart from 'chart.js/auto';
 import { Chart as ChartJS } from "chart.js/auto";
 import "leaflet/dist/leaflet.css"
 const fetchChartData = async () => {
