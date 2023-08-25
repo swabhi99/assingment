@@ -10,7 +10,7 @@ const Contacts=(props:any)=> {
         dispatch(deleteContact(id))
     }
   return (
-    <div className="grid grid-cols-3 gap-2 w-screen">
+    <div className="sm:grid-col-1 md:grid grid-cols-3 gap-2 w-screen">
        {
         contacts.map((contact:any)=>{
             const {firstName,lastName,status,id} = contact
