@@ -21,7 +21,7 @@ const Home = () => {
   return (
   <div className="grid grid-cols-6 h-screen">
   
-     <div className=" row-span-full flex flex-col p-8 border-2 ">
+     <div className="max-sm:col-span-6  lg:col-span-1 row-span-full flex flex-col p-8 border-2 ">
             <div className='mt-8 text-2xl border-b-4'><Link to='/'>Contacts</Link></div>
             <div className='mt-8 text-2xl border-b-4 '><Link to='/charts'>Maps and charts</Link></div>
       </div> 
